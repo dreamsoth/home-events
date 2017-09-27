@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/dreamsoth/home-events/issues"
   },
-  "homepage": "https://github.com/dreamsoth/home-events#readme"
+  "homepage": "https://github.com/dreamsoth/home-events#readme",
+  "dependencies": {
+    "baconjs": "^0.7.95",
+    "express": "^4.15.5",
+    "monet": "^0.8.10",
+    "ramda": "^0.24.1"
+  }
 }
