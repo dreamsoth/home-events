@@ -1,0 +1,18 @@
+home-events-db:
+  image: mongo
+  container_name: "home-events-db"
+  ports:
+   - "27017:27017"
+  volumes:
+   - ./db/:/data/db/
+home-events:
+  image: node:boron
+  container_name: "home-events.js"
+  volumes:
+    - ./:/home-events/
+  working_dir: /home-events/
+  command: npm start
+  ports:
+    - "3000:3000"
+  links:
+    - home-events-db:dbhost
