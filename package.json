@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "debug": "./node_modules/nodemon/bin/nodemon.js --inspect index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,14 @@
   "homepage": "https://github.com/dreamsoth/home-events#readme",
   "dependencies": {
     "baconjs": "^0.7.95",
+    "enumify": "^1.0.4",
     "express": "^4.15.5",
     "monet": "^0.8.10",
+    "mongoose": "^4.11.13",
     "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "standard": "^10.0.3"
   }
 }
